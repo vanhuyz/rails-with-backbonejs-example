@@ -1,23 +1,37 @@
-h1 Listing todos
+/ h1 Listing todos
 
-table
-  thead
-    tr
-      th Title
-      th Completed
-      th
-      th
-      th
+/ table
+/   thead
+/     tr
+/       th Title
+/       th Completed
+/       th
+/       th
+/       th
 
-  tbody
-    - @todos.each do |todo|
-      tr
-        td = todo.title
-        td = todo.completed
-        td = link_to 'Show', todo
-        td = link_to 'Edit', edit_todo_path(todo)
-        td = link_to 'Destroy', todo, data: {:confirm => 'Are you sure?'}, :method => :delete
+/   tbody
+/     - @todos.each do |todo|
+/       tr
+/         td = todo.title
+/         td = todo.completed
+/         td = link_to 'Show', todo
+/         td = link_to 'Edit', edit_todo_path(todo)
+/         td = link_to 'Destroy', todo, data: {:confirm => 'Are you sure?'}, :method => :delete
 
-br
+/ br
 
-= link_to 'New Todo', new_todo_path
+/ = link_to 'New Todo', new_todo_path
+
+
+section#todoapp
+  header#header
+    h1 Todos
+    input#new-todo placeholder=("What needs to be done?") /
+    div
+      a href="#/"  show all
+      | |
+      a href="#/pending"  show pending
+      | |
+      a href="#/completed"  show completed
+  section#main
+    ul#todo-list
