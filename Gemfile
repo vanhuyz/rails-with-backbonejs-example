@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+gem 'pry-rails'
+gem 'slim-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-backbone'
+end
