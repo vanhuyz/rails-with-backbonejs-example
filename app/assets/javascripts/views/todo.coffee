@@ -1,4 +1,4 @@
-class @App.Views.Todo extends Backbone.View
+class App.Views.Todo extends Backbone.View
   tagName: 'li'
   template: JST['templates/todo']
   render: ->

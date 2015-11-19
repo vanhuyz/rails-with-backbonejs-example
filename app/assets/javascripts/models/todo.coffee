@@ -1,4 +1,4 @@
-class @App.Models.Todo extends Backbone.Model
+class App.Models.Todo extends Backbone.Model
   defaults:
     title: ''
     completed: false
