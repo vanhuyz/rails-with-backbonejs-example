@@ -1,11 +1,6 @@
 class @App.Views.Todo extends Backbone.View
   tagName: 'li'
-  template: _.template('<div class="view">
-      <input class="toggle" type="checkbox" <%= completed ? "checked" : "" %>>
-      <label><%- title %></label>
-      <input class="edit" value="<%- title %>">
-      <button class="destroy">remove</button>
-    </div>')
+  template: JST['templates/todo']
   render: ->
     @$el.html @template(@model.toJSON())
     @input = @$('.edit')

@@ -47,6 +47,7 @@ end
 
 gem 'pry-rails'
 gem 'slim-rails'
+gem 'ejs'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-backbone'
