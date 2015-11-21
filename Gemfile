@@ -59,3 +59,5 @@ gem 'ejs'
 source 'https://rails-assets.org' do
   gem 'rails-assets-backbone'
 end
+
+ruby "2.2.0"
