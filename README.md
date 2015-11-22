@@ -1,2 +1,3 @@
-# rails-with-backbonejs-example
-A classic Todo app written in Rails and Backbone JS
+# Todo app written in Rails and Backbone JS
+
+Demo: https://radiant-island-8336.herokuapp.com
